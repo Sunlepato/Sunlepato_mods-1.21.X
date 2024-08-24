@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "sunlepatomods",
+	"version": "${version}",
+	"name": "Sunlepato mods",
+	"description": "A mod that adds cute tameable mobs and other stuff!",
+	"authors": [
+		"Sunlepato"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/sunlepatomods/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.sunlepato.mods.SunlepatoMods"
+		],
+		"fabric-datagen": [
+			"net.sunlepato.mods.SunlepatoModsDataGenerator"
+		],
+		"client":[
+			"net.sunlepato.mods.SunlepatoModsClient"
+		]
+	},
+	"mixins": [
+		"sunlepatomods.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.0",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
